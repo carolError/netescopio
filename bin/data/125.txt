@@ -1,0 +1,26 @@
+Olia Lialina
+My boyfriend came back from the war
+Proyecto online. 1996
+0x4fac27
+Esta pieza de Olia Lialina es uno de aquellos 
+primeros trabajos en relación a lo narrativo 
+desarrollados para Internet, quizás uno de los más 
+citados dentro del  contexto europeo. Implementado 
+con formas simples de  HTML, marcos, imágenes 
+posterizadas, colores y fuentes   "default", 
+constituyen una estrategia de comunicación frente 
+al usuario de la web que caracterizaría las 
+obras posteriores de esta artista.
+"My boyfriend came back from the war" podría 
+definirse como una historia sobre el amor y la 
+soledad. ¿Una historia interactiva sobre el amor y 
+la soledad?  
+Es difícil de responder ya que más que a una 
+historia se parece a un monólogo y esto refuerza 
+la sensación de soledad. Soledad que por otra 
+parte, a diferencia de otras disciplinas 
+artísticas, es lo que caracteriza lo literario, y 
+lo podemos ver tanto en el usuario de la web como 
+en el lector de un libro. Un monólogo que parece 
+jugar con la tensión entre la confesión pública 
+y la experiencia privada.

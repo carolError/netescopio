@@ -1,0 +1,6 @@
+anemicCover
+Christian Oyarzún
+Software art, Real time performances 2005
+0x29a9cc
+Voodoochild es una banda DIY cyberpunk de Santiago de Chile, en la que el único miembro humano es el artista Christian Oyarzún-el programador- mientras que el resto de la banda la integran una cadena de protocolos de hardware y software, además de su vocalista, DonMiguel, un sintetizador de voz cuyo alias tomó prestado del personaje de la cultura popular chilena. El proyecto Voodoochild ha derivado en una colección de piezas de software entre las que encontramos animaciones, piezas interactivas, generativas, que trabajan sobre distintas aproximaciones ópticas y cinéticas desarrolladas para las presentaciones performáticas de la "banda".
+En su set "anemicCover", Voodoochild nos plantea un universo puramente digital en el que los algoritmos se convierten en formas visuales puras. Esta relación entre código e imagen nos recuerdan a Anemic Cinema. En ese film de Marcel Duchamp dos niveles de lectura competían, las formas geométricas y las palabras. Lo que vemos en Voodoochild es que el nivel de las palabras se esconde de nuestra vista camuflado en figuras geométricas matemáticas que las mismas palabras, convertidas en código, generan.

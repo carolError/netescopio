@@ -1,0 +1,5 @@
+obj
+bin/*
+!bin/data
+!bin/data/*
+!bin/data/**

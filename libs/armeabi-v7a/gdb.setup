@@ -1,0 +1,6 @@
+set solib-search-path /Applications/openFrameworks/apps/netescopio/netescopio/obj/local/armeabi-v7a:/Applications/openFrameworks/apps/netescopio/netescopio/libs/armeabi-v7a
+directory /Applications/android-ndk-r8d/platforms/android-14/arch-arm/usr/include
+directory /Applications/openFrameworks/apps/netescopio/netescopio/src
+directory /Applications/android-ndk-r8d/sources/cxx-stl/system
+directory /Applications/openFrameworks/apps/netescopio/netescopio/libs/armeabi-v7a
+
