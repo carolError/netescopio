@@ -70,6 +70,7 @@ void testApp::setup(){
 
 	ofFile labelsIds("labels.txt");
     while(labelsIds.good()){
+
     	int idLabel;
     	labelsIds >> idLabel;
 		ofLogNotice() << "opening id: " << idLabel << endl;
@@ -246,7 +247,7 @@ void testApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int _button){
-	if(hasLabels){
+	if(hasLabels || state==Description){
 		bMousePressed = true;
 		mx = x; my = y;
 	}
@@ -256,8 +257,8 @@ void testApp::mousePressed(int x, int y, int _button){
 void testApp::mouseReleased(int x, int y, int _button){
 	//ofLogNotice()<< "mouse released";
 	bMousePressed = false;
-	if(hasLabels && button.inside(mx,my)){
-		//ofLogNotice()<< "mouse inside";
+	if((hasLabels  || state==Description) && button.inside(mx,my) && button.inside(x,y)){
+		ofLogNotice()<< "mouse inside";
 		if(state == Description){
 			#ifdef TARGET_ANDROID
 				ofSetOrientation(OF_ORIENTATION_90_RIGHT);
@@ -282,10 +283,28 @@ void testApp::windowResized(int w, int h){
 
 }
 void testApp::displayBoton(){
-	button.set(ofGetWidth()-220,ofGetHeight()-220,160,160);
+	/*button.set(ofGetWidth()-220,ofGetHeight()-220,160,160);
 	plusV.set(ofGetWidth()-220+160/2-10,ofGetHeight()-220+20,20,120);
-	plusH.set(ofGetWidth()-220+20,ofGetHeight()-220+160/2-10,120,20);
-
+	plusH.set(ofGetWidth()-220+20,ofGetHeight()-220+160/2-10,120,20);*/
+	float w = ofGetWidth();
+	float h = ofGetHeight();
+	float x_boton = w*.70;
+	float y_boton = h*.10;
+	float w_boton = w*.19;
+	float h_boton = w*.19;
+	float w_barra_H = w_boton*.8;
+	float h_barra_H = w_boton*.2;
+	float x_barra_H = x_boton + ((w_boton - w_barra_H)/2);
+	float y_barra_H= y_boton + ((h_boton - h_barra_H)/2);
+	float w_barra_V = w_boton*.2;
+	float h_barra_V = w_boton*.8;
+	float x_barra_V = x_boton + ((w_boton/2)-(w_barra_V/2));
+	float y_barra_V= y_boton + ((h_boton - h_barra_V)/2);
+	//ofSetRectMode(OF_RECTMODE_CENTER);
+	button.set(x_boton , y_boton , w_boton , h_boton);
+	plusV.set(x_barra_V, y_barra_V , w_barra_V , h_barra_V);
+	plusH.set(x_barra_H, y_barra_H , w_barra_H , h_barra_H);
+	//ofSetRectMode(OF_RECTMODE_CORNER);
 	ofSetHexColor(0xef037f);
 	ofRect(button);
 	ofSetColor(255);

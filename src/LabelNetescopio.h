@@ -33,6 +33,7 @@ class LabelNetescopio : public ofBaseApp{
 		ofColor bgColor;
 		bool inter;
 		int loopG;
+		ofFile templateNetescopio;
 		bool imgFrame;
 		float x ;
 		float y ;

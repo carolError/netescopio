@@ -19,14 +19,18 @@ void LabelNetescopio::setup(int idLabel){
 		author = buffer.getFirstLine();
 		title = buffer.getNextLine();
 		subtitle = buffer.getNextLine();
+		texto = author + "\n" + title + "\n" + subtitle + "\n";
 		bgColor = ofColor::fromHex(ofHexToInt(buffer.getNextLine()));
 		while(!buffer.isLastLine()){
 			description +=  buffer.getNextLine()+"\n";
 		}
 		image.loadImage("img/"+ofToString(idLabel)+".jpg");
 	}
-
-	ofFile templateNetescopio("netescopio.html");
+	if (ofGetHeight() < 1200){
+		templateNetescopio.open("netescopio_tel.html");
+	} else {
+		templateNetescopio.open("netescopio_tablet.html");
+	}
 	ofBuffer html(templateNetescopio);
 	string htmlStr = html;
 	ofStringReplace(htmlStr,"${author}",author);
@@ -51,6 +55,7 @@ void LabelNetescopio::start(){
 
 //--------------------------------------------------------------
 void LabelNetescopio::update(){
+
 	if(loopG%30==0){
 		imgFrame=!imgFrame;
 		if(imgFrame){
@@ -71,6 +76,7 @@ void LabelNetescopio::draw(){
 	ofTranslate(-G1.getWidth()*.5,-G1.getHeight()*.5);
 	
 	ofSetColor(255); 
+
 	img->draw(0,0);
 	
 	//ofImage(img,0,0);
@@ -81,7 +87,6 @@ void LabelNetescopio::draw(){
 		ofSetColor(0);
 		font.drawString(texto, 150, 300);
 	}
-	//text(texto, 0, 0);
 	ofPopMatrix();
 }
 
@@ -91,6 +96,7 @@ void LabelNetescopio::showDescription(){
 
 void LabelNetescopio::hideDescription(){
 	doc->hide();
+
 }
 
 void LabelNetescopio::tabla(){

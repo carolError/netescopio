@@ -48,7 +48,8 @@ class testApp : public ofBaseApp{
 		float scale;
 
 		ofRectangle button;
-		ofRectangle plusV,plusH;
+		ofRectangle plusV;
+		ofRectangle plusH;
 		enum State{
 			AR,
 			Description
