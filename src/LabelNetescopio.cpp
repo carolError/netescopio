@@ -26,10 +26,18 @@ void LabelNetescopio::setup(int idLabel){
 		}
 		image.loadImage("img/"+ofToString(idLabel)+".jpg");
 	}
-	if (ofGetHeight() < 1200){
-		templateNetescopio.open("netescopio_tel.html");
+	if(ofGetHeight()>ofGetWidth()){
+		if (ofGetHeight() < 1200){
+			templateNetescopio.open("netescopio_tel.html");
+		} else {
+			templateNetescopio.open("netescopio_tablet.html");
+		}
 	} else {
-		templateNetescopio.open("netescopio_tablet.html");
+		if (ofGetWidth() < 1200){
+			templateNetescopio.open("netescopio_tel.html");
+		} else {
+			templateNetescopio.open("netescopio_tablet.html");
+		}
 	}
 	ofBuffer html(templateNetescopio);
 	string htmlStr = html;
