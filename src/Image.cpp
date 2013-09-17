@@ -71,6 +71,7 @@ void Image::display(){
 	cout << newY << endl;
 	cout << aRat << endl;
 	cout << "---" << endl;
+	ofScale(1.5,1.5);
 	img->draw(0,0,randX,newY);
 	ofPopMatrix();
 	ofSetRectMode(OF_RECTMODE_CORNER);

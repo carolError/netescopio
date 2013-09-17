@@ -43,7 +43,7 @@ class testApp : public ofBaseApp{
 
 		set<int> lastSeenMarker;
 		map<int,LabelNetescopio> labels;
-		int particlesId[6];
+		map<int,Particles> particles;
 		int logoId;
 		float scale;
 
@@ -60,7 +60,6 @@ class testApp : public ofBaseApp{
 		int mx,my;
 		bool hasLabels;
 
-		Particles particles;
 		Logo logo;
 		ofImage thresImg;
 		ofImage descBg;

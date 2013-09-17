@@ -22,9 +22,9 @@ void Letter::setup(float m, ofVec3f l, ofVboMesh& _wordMesh,ofTexture& _fontText
 	angle = ofRandom(-20,20);
 	//aVelocity = 0;
 	//aAcceleration = 0;
-	tam = (int)ofRandom(0,32);
+	tam = (int)ofRandom(0,50);
 	tamScale = tam/48.;
-	col = ofRandom(200);
+	col = ofRandom(255);
 	life = 510;
 	//car = letra[(int)ofRandom(sizeof(letra))];
 	wordMesh = &_wordMesh;

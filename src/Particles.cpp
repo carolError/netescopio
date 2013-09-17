@@ -1,10 +1,11 @@
 #include "Particles.h"
 
 //--------------------------------------------------------------
-void Particles::setup(){
+void Particles::setup(int _numImage){
 	//float eY = ofRandom( -(ofGetHeight()/2), ofGetHeight()/2);
 	//float eX = ofRandom( -(ofGetWidth()/2), ofGetWidth()/2);
 	emitter.setup(ofVec3f(0,0,0));
+	numImage = _numImage;
 }
 
 //--------------------------------------------------------------
@@ -13,16 +14,16 @@ void Particles::update(){
 }
 
 //--------------------------------------------------------------
-void Particles::draw(int marc){
-	int m = marc;
+void Particles::draw(){
 	if (counter%50 == 0){
-		emitter.addImages(m);
+		emitter.addImages(numImage);
 	}
 	emitter.runImages();
+
 	if (counter%2 == 0){
-			emitter.addLetters();
-		}
-		emitter.runLetters();
+		emitter.addLetters();
+	}
+	emitter.runLetters();
 	
 
 }

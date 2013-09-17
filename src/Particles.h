@@ -6,9 +6,9 @@
 class Particles : public ofBaseApp{
 
 	public:
-		void setup();
+		void setup(int numImage);
 		void update();
-		void draw(int marc);
+		void draw();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -22,4 +22,5 @@ class Particles : public ofBaseApp{
 		
 		int counter;
 		Emitter emitter;
+		int numImage;
 };

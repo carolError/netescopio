@@ -89,13 +89,13 @@ void testApp::setup(){
 	//TODO: this is an id from a label, use a different one
 	//logoId = 125;
 
-	particlesId[0] = 985;
-	particlesId[1] = 904;
-	particlesId[2] = 903;
-	particlesId[3] = 900;
-	particlesId[4] = 51;
-	particlesId[5] = 22;
-	particles.setup();
+	particles[985].setup(0);
+	particles[904].setup(1);
+	particles[903].setup(2);
+	particles[900].setup(3);
+	particles[51].setup(4);
+	particles[21].setup(5);//es 22! cambiarrrrrrr
+
 
 }
 
@@ -125,20 +125,12 @@ void testApp::update(){
 		}
 
 		set<int> newIds;
-		bool hasParticles = false;
+
 		for(int i=0;i<aruco.getNumMarkers();i++){
 			int currentId = aruco.getMarkers()[i].idMarker;
-			//cout << currentId << endl;
-			bool isParticles = false;
-			for(int j=0; j<6;j++){
-				if(currentId==particlesId[j]){
-					isParticles = true;
-					hasParticles = true;
-					break;
-				}
-			}
-
-			if(!isParticles && labels.find(currentId)!=labels.end()){
+			if(particles.find(currentId)!=particles.end()){
+				particles[currentId].update();
+			}else if(labels.find(currentId)!=labels.end()){
 				hasLabels = true;
 
 				if(lastSeenMarker.find(aruco.getMarkers()[i].idMarker)==lastSeenMarker.end()){
@@ -153,9 +145,6 @@ void testApp::update(){
 
 		if(aruco.getNumMarkers()){
 			descId = aruco.getMarkers()[0].idMarker;
-		}
-		if(hasParticles){
-			particles.update();
 		}
 
 
@@ -193,26 +182,17 @@ void testApp::draw(){
 			int currentId = aruco.getMarkers()[i].idMarker;
 			//cout << currentId << endl;
 			//cout << "---" << endl;
-
-			bool isParticles = false;
 			aruco.begin(i);
 
-			for (int j=0; j<6; j++){
-				if(currentId==particlesId[j]){
-					//ofRotate(90,1,0,0);
-					//ofSetColor(ofColor::red);
-					//ofLine(ofVec3f(-markerSize/2.,0,0),ofVec3f(-markerSize/2.,10,0));
-					//ofLine(ofVec3f(markerSize/2.,0,0),ofVec3f(markerSize/2.,10,0));
-					//ofSetColor(255);
-					ofScale(-1./ofGetHeight(),-1./ofGetHeight(),1./ofGetHeight());
-					particles.draw(j);
-					isParticles = true;
-					break;
-				}
-			}
+			if(particles.find(currentId)!=particles.end()){
 
-
-			if(!isParticles && labels.find(currentId)!=labels.end()){
+				ofSetColor(ofColor::red);
+				ofLine(ofVec3f(-markerSize/2.,0,0),ofVec3f(-markerSize/2.,10,0));
+				ofLine(ofVec3f(markerSize/2.,0,0),ofVec3f(markerSize/2.,10,0));
+				ofSetColor(255);
+				ofScale(-1./ofGetHeight(),-1./ofGetHeight(),1./ofGetHeight());
+				particles[currentId].draw();
+			}else if(labels.find(currentId)!=labels.end()){
 				ofRotate(90,1,0,0);
 				ofScale(-1./ofGetHeight(),-1./ofGetHeight(),1./ofGetHeight());
 				labels[aruco.getMarkers()[i].idMarker].draw();
