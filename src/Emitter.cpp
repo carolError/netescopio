@@ -52,7 +52,7 @@ void Emitter::addLetters(){
 	Letter letter;
 
 	float prob = ofRandom(1);
-	if(prob<.9){
+	if(prob<.7){
 		letter.setup(ofRandom(0.5,2), origin, words[(int)ofRandom(2)],font[1].getFontTexture());
 	}else{
 		letter.setup(ofRandom(0.5,2), origin, words[(int)ofRandom(3,26)],font[0].getFontTexture());

@@ -27,6 +27,8 @@ public:
 	float mass;
 	float col;
 	int life;
+	float lifeColor;
+	float time1, time2;
 	int tam;
 	ofImage * img;
 

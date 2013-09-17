@@ -23,4 +23,6 @@ class Particles : public ofBaseApp{
 		int counter;
 		Emitter emitter;
 		int numImage;
+		float countSecImg;
+		float countSecLet;
 };

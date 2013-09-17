@@ -6,26 +6,26 @@ void Particles::setup(int _numImage){
 	//float eX = ofRandom( -(ofGetWidth()/2), ofGetWidth()/2);
 	emitter.setup(ofVec3f(0,0,0));
 	numImage = _numImage;
+	countSecImg = ofGetElapsedTimef();
+	countSecLet = ofGetElapsedTimef();
 }
 
 //--------------------------------------------------------------
 void Particles::update(){
-	counter++;
+	if (ofGetElapsedTimef() - countSecImg >= 3. ){
+		emitter.addImages(numImage);
+		countSecImg = ofGetElapsedTimef();
+	}
+	if (ofGetElapsedTimef() - countSecLet >= 0.5 ){
+		emitter.addLetters();
+		countSecLet = ofGetElapsedTimef();
+	}
 }
 
 //--------------------------------------------------------------
 void Particles::draw(){
-	if (counter%50 == 0){
-		emitter.addImages(numImage);
-	}
 	emitter.runImages();
-
-	if (counter%2 == 0){
-		emitter.addLetters();
-	}
 	emitter.runLetters();
-	
-
 }
 
 //--------------------------------------------------------------

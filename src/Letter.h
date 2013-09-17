@@ -24,6 +24,7 @@ public:
 	float mass;
 	float col;
 	int life;
+	float lifeColor;
 	string car;
 	
 	ofVboMesh * wordMesh;

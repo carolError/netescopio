@@ -17,8 +17,8 @@ void Letter::setup(float m, ofVec3f l, ofVboMesh& _wordMesh,ofTexture& _fontText
 	
 	mass = m;
 	loc = l;
-	vel.set(ofRandom(-0.5,0.5),ofRandom(-1,0.5),ofRandom(-0.5,0.5));
-	acc.set(0,-1,0);
+	vel.set(ofRandom(-10,20),ofRandom(0,-150),ofRandom(-10,20));
+	acc.set(0,-2,0);
 	angle = ofRandom(-20,20);
 	//aVelocity = 0;
 	//aAcceleration = 0;
@@ -26,6 +26,7 @@ void Letter::setup(float m, ofVec3f l, ofVboMesh& _wordMesh,ofTexture& _fontText
 	tamScale = tam/48.;
 	col = ofRandom(255);
 	life = 510;
+	lifeColor = 510;
 	//car = letra[(int)ofRandom(sizeof(letra))];
 	wordMesh = &_wordMesh;
 	fontTexture = &_fontTexture;
@@ -37,12 +38,16 @@ void Letter::applyForce(ofVec3f force){
 }
 
 void Letter::update(){
-    vel += acc;
-    loc += vel;
+    vel += acc *ofGetLastFrameTime();
+    loc += vel *ofGetLastFrameTime();
     //aAcceleration = acc.y / 10.0;
     //aVelocity += aAcceleration;
     //angle += aVelocity;
     acc.set(0,0,0);
+    lifeColor -= 0.3;
+    if (lifeColor <100){
+    	lifeColor--;
+    }
     life--;
 }
 

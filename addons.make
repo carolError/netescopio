@@ -1,5 +1,5 @@
-#ofxAndroid
-#ofxAccelerometer
+ofxAndroid
+ofxAccelerometer
 ofxAruco
 ofxOpenCv
 ofxCv
