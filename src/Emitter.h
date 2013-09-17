@@ -25,6 +25,6 @@ public:
 	void setup(ofVec3f location);
 	void runImages();
 	void runLetters();
-	void addImages();
+	void addImages(int m);
 	void addLetters();
 };

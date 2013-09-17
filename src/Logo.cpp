@@ -138,7 +138,7 @@ void Logo::draw(){
 	ofScale(1/lw*0.5,1/lw*0.5,1/lw*0.5);
 	ofPushMatrix();
 	//ofRotateY(180);
-	ofScale(5,5,5);
+	ofScale(15,15,15);
 	photo.bind();
 	tri1.draw();
 	photo.unbind();
@@ -146,7 +146,7 @@ void Logo::draw(){
 	
 	ofPushMatrix();
 	ofRotateY(180);
-	ofScale(3,3,3);
+	ofScale(13,13,13);
 	logoImg1.bind();
 	logo1.draw();
 	logo2.draw();

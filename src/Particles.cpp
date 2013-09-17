@@ -13,10 +13,10 @@ void Particles::update(){
 }
 
 //--------------------------------------------------------------
-void Particles::draw(){
-
+void Particles::draw(int marc){
+	int m = marc;
 	if (counter%50 == 0){
-		emitter.addImages();
+		emitter.addImages(m);
 	}
 	emitter.runImages();
 	if (counter%2 == 0){

@@ -62,10 +62,32 @@ void Emitter::addLetters(){
     
 }
 
-void Emitter::addImages(){
+void Emitter::addImages(int m){
 	Image image;
+	int m_ = m;
+	if (m_==0){
 	image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(24)]);
     images.push_back(image);
+	} else if(m_==1){
+		image.setup(ofRandom(0.5,2), origin, img[7]);
+	    images.push_back(image);
+
+	} else if(m_==2){
+			image.setup(ofRandom(0.5,2), origin, img[1]);
+			images.push_back(image);
+
+	} else if(m_==3){
+		image.setup(ofRandom(0.5,2), origin, img[5]);
+	    images.push_back(image);
+
+	} else if(m_==4){
+		image.setup(ofRandom(0.5,2), origin, img[10]);
+	    images.push_back(image);
+
+	} else if(m_==5){
+		image.setup(ofRandom(0.5,2), origin, img[15]);
+	    images.push_back(image);
+	}
 }
 
 void Emitter::runLetters(){

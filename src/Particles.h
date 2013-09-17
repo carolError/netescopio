@@ -8,7 +8,7 @@ class Particles : public ofBaseApp{
 	public:
 		void setup();
 		void update();
-		void draw();
+		void draw(int marc);
 
 		void keyPressed(int key);
 		void keyReleased(int key);

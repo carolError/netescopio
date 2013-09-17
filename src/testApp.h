@@ -43,7 +43,7 @@ class testApp : public ofBaseApp{
 
 		set<int> lastSeenMarker;
 		map<int,LabelNetescopio> labels;
-		int particlesId;
+		int particlesId[6];
 		int logoId;
 		float scale;
 
