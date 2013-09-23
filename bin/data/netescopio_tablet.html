@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,7 @@
     background-repeat:no-repeat;
     background-size:100%;
 	font-family: "FreeSans";
+	font-charset: U+00??;
     margin: 0;
     }
 	#header {
@@ -41,15 +43,22 @@
     #autor{
 	font-weight: bold;
 	font-size: 1.7em;
-	color: #ff00ff;
+	color:#ee00ee;
     }
     #obra{
 	font-weight: bold;
+	font-size: 2.0 em;
+	color:#ff00ee;
+    }
+    #subtitulo{
+	font-weight: bold;
 	font-size: 1.7em;
+	color:#ee00ee;
     }	
     
+/**
     scrollbarvertical{
-    	/*width:10px;*/
+    
     	width:10%;
     }
     sliderarrowdec{
@@ -59,11 +68,12 @@
     	width:0px;
     }
 	slidertrack{
-		background-color:#000;
+		background-color:rgba(0,0,0,0);
 	}
 	sliderbar{
 		background-color:#ff00ff;
 	}
+**/
 </style>
 </head>
 <body>
@@ -76,14 +86,15 @@
 		${title}
 		<br/>
 	</div>
-	<div id="obra">
+	<div id="subtitulo">
 		${subtitle}
-		<br/>
 	</div>
 </div>
-	
-<div id="container">
+<br/>
+<br/>
+<br/>	
+<scroll id="container">
 	<p>${description}</p>
-</div>
+</scroll>
 </body>
 </html>

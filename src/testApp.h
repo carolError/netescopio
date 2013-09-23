@@ -8,6 +8,7 @@
 #include "LabelNetescopio.h"
 #include "Particles.h"
 #include "Logo.h"
+#include "UIElementScroll.h"
 
 #ifdef TARGET_ANDROID
 #include "ofxAndroid.h"

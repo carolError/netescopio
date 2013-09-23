@@ -69,23 +69,23 @@ void Emitter::addImages(int m){
 	image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(24)]);
     images.push_back(image);
 	} else if(m_==1){
-		image.setup(ofRandom(0.5,2), origin, img[7]);
+		image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(4)]);
 	    images.push_back(image);
 
 	} else if(m_==2){
-			image.setup(ofRandom(0.5,2), origin, img[1]);
+			image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(5,9)]);
 			images.push_back(image);
 
 	} else if(m_==3){
-		image.setup(ofRandom(0.5,2), origin, img[5]);
+		image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(10,14)]);
 	    images.push_back(image);
 
 	} else if(m_==4){
-		image.setup(ofRandom(0.5,2), origin, img[10]);
+		image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(15,19)]);
 	    images.push_back(image);
 
 	} else if(m_==5){
-		image.setup(ofRandom(0.5,2), origin, img[15]);
+		image.setup(ofRandom(0.5,2), origin, img[(int)ofRandom(20,14)]);
 	    images.push_back(image);
 	}
 }

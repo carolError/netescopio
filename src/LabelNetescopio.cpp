@@ -12,7 +12,7 @@ LabelNetescopio::LabelNetescopio(){
 
 void LabelNetescopio::setup(int idLabel){
 	ofFile text(ofToString(idLabel)+".txt");
-
+	font.loadFont("FreeSans.ttf", 12);
 	if(text.getSize()){
 		cout << "loading " << idLabel << endl;
 		ofBuffer buffer(text);
@@ -27,16 +27,20 @@ void LabelNetescopio::setup(int idLabel){
 		image.loadImage("img/"+ofToString(idLabel)+".jpg");
 	}
 	if(ofGetHeight()>ofGetWidth()){
-		if (ofGetHeight() < 1200){
+		if (ofGetWidth() < 641){
 			templateNetescopio.open("netescopio_tel.html");
+			cout << "tel-vertical" << endl;
 		} else {
 			templateNetescopio.open("netescopio_tablet.html");
+			cout << "tablet-vertical" << endl;
 		}
 	} else {
-		if (ofGetWidth() < 1200){
+		if (ofGetHeight() < 641){
 			templateNetescopio.open("netescopio_tel.html");
+			cout << "tel-horizontal" << endl;
 		} else {
 			templateNetescopio.open("netescopio_tablet.html");
+			cout << "tablet-horizontal" << endl;
 		}
 	}
 	ofBuffer html(templateNetescopio);

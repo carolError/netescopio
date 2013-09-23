@@ -64,6 +64,7 @@ void testApp::setup(){
 	LabelNetescopio::libRocket = new ofxLibRocket;
 	LabelNetescopio::libRocket->loadFont("FreeSans.ttf");
 	LabelNetescopio::libRocket->setup();
+	UIElementScroll::registerWithlibRocket();
 
 
 	descBg.loadImage("baseDescripcion.jpg");
@@ -94,7 +95,7 @@ void testApp::setup(){
 	particles[903].setup(2);
 	particles[900].setup(3);
 	particles[51].setup(4);
-	particles[21].setup(5);//es 22! cambiarrrrrrr
+	particles[22].setup(5);
 
 
 }
