@@ -1,0 +1,6 @@
+RSG (Radical Software Group)
+CARNIVORE
+Software. 2000.
+0x000000
+Carnivore fue un software desarrollado en 1997 por el FBI con el propósito de vigilar toda red de datos que hubiera sido señalada como objetivo.  Similar en sus funciones a Echelon -éste otro desarrollado por la NSA- "escuchaba" todo el tráfico de Internet (correo electrónico, navegación web, etc.) en esa red local específica. Con el tiempo, Carnivore fue suplantado por otros softwares de desarrollo privado y todo haría pensar de que su información es ya poco relevante comparada con la que proporcionan las redes sociales.
+RSG desarrolló en respuesta a esto, una biblioteca para Processing que llamó también Carnivore,  con las mismas funcionalidades pero disponible en forma abierta y gratuita. Los datos que brinda la librería, pueden ser utilizados de un sin número de maneras. Entre quienes experimentaron con este desarrollo, además del propio RSG, encontramos a artistas como Joshua Davis, Mark Napier, Cory Arcangel, Vuk Cosic, Golan Levin, entre otros.

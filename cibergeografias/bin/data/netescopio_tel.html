@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/rcss">
+
+    
+    body {
+	    background-image:url('baseDescripcion.jpg');
+	    background-repeat:no-repeat;
+	    background-size:100%;
+		font-family: "FreeSans";
+		font-charset: U+00??;
+	    margin: 0;
+    }
+    
+	#header {
+    	display: block;
+		/*overflow-y: auto;*/
+		/*overflow-x: hidden;*/
+		color: #FFFFFF;
+		margin-top: 14.5%;
+		margin-left: 12.5%; 
+		margin-right: 32.5%;
+		height:25%;
+    }
+    
+    #container {
+    	display: block;
+		overflow-y: auto;
+		overflow-x: hidden;
+		color: #FFFFFF;
+		font-size: 1.7 em;
+		height:46%;
+		margin-left: 12.5%; 
+		margin-right: 12.5%;
+		margin-bottom: 14.5%;
+		/*margin-top: 14.5%;*/
+		/*margin-left: 12.5%;*/ 
+		/*margin-right: 12.5%;*/
+		/*margin-bottom: 14.5%;*/
+    }
+    
+    em {
+    font-style: italic;
+    }
+
+    #autor{
+	font-weight: bold;
+	font-size: 1.7 em;
+	color:#00aeef;
+    }
+    #obra{
+	font-weight: bold;
+	font-size: 2.0 em;
+	color:#00aeef;
+    }	
+    #subtitulo{
+	font-weight: bold;
+	font-size: 1.6 em;
+	color:#00aeef;
+    }
+  
+  /**  
+    scrollbarvertical{
+    	width:35%;
+    }
+    sliderarrowdec{
+    	width:0px;
+    }
+    sliderarrowinc{
+    	width:0px;
+    }
+	slidertrack{
+		background-color:rgba(0,0,0,0);
+	}
+	sliderbar{
+		background-color:#ffff00;
+	}
+**/
+	
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="autor">
+		${author}
+		<br/>
+	</div>
+	<div id="obra">
+		${title}
+		<br/>
+	</div>
+	<div id="subtitulo">
+		${subtitle}
+	</div>
+</div>	
+<scroll id="container">
+	<p><p>${description}</p></p>
+</scroll>
+</body>
+</html>

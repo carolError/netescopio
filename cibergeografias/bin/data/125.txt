@@ -1,0 +1,6 @@
+Sander Veenhof
+WATCH YOUR PRIVACY
+Aplicación para Google Glass. 2014.
+0x000000
+¿Me siento seguro si  más o si hay menos vigilancia? ¿Qué pasa con la privacidad? Con esta aplicación para Google Glass, Veenhof nos permite, en combinación con la utilización de datos públicos sobre la ubicación de cámaras de seguridad, reconocer en tiempo real mientras nos desplazamos por la ciudad, las zonas "seguras" y las "inseguras". Éstas aparecerán coloreadas en verde o en rojo. Pero antes deberemos definir qué consideramos seguro: mediante un switch en el programa, decidiremos si seguro significa que ese espacio está liberado de la visión de las cámaras o por el contrario, está dentro de su óptica de vigilancia.
+En un mundo hipercartografiado, medido y digitalizado, Veenhof nos propone perdernos en esos espacios aún vírgenes, en esos rincones "salvajes" -no domesticados- , inmunes por el momento al registro y al control.

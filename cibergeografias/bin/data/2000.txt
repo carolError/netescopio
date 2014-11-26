@@ -1,0 +1,8 @@
+Yahoo Search Loop
+Kim Asendorf 
+Online project. 2008
+0x29a9cc
+This piece by Kim Asendorf uses the Yahoo search engine, and invites us to type any random word and to watch the search results tumble down the page: in a loop, each word will set off a new search, until the whole page is filled.
+Within the group of works that make use of search engines –a genre in itself– this one seems to subject the machine either to a psychoanalytic technique –free association–, or to a surrealist strategy –automatic writing.
+Tzara’s statement that “thoughts are born in the mouth", would, in this case, be altered to read “thoughts are born on the screen”, spat out by the search engine, that perverse machine, a cross between a hoover, a washing machine and a jukebox, which, fed by the textual matter of the Internet, yields the collective unconscious of modern society, ground up, rearranged and labelled.
+The language machine analysing itself.

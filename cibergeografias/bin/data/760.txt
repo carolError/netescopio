@@ -1,0 +1,7 @@
+Antoni Abad
+MEGAFONE
+Proyecto en red. 2004
+0x000000
+El proyecto Megafone consiste en generar una plataforma de difusión a través de un sistema de autopublicación con teléfonos móviles, pensada para dar voz a diferentes colectivos como por ejemplo, mensajeros en motocicleta de San Pablo, refugiados saharauis en Argelia o inmigrantes en Nueva York . Sitio*TAXI, realizado con taxistas de la ciudad de México, fue su primera experiencia. El proyecto consistió en dar a una serie de taxistas un teléfono móvil con cámara integrada y crear un sitio web al que cada uno de ellos podía subir las fotos o vídeos que registrase con su teléfono durante su jornada laboral. 
+Esta superposición de redes tecnológicas, la red del sistema de taxis de sitio (radio-taxis), la red de los teléfonos celulares y por último, la red Internet, se complementan con una red de comunicación más compleja compuesta por las historias que se tejen y destejen en los auto-móviles de alquiler que atraviesan constantemente el DF. 
+Hay una simétrica relación entre Abad trasladándose por esta ciudad que no es la suya y los taxistas, obligados siempre a hacer viajes ajenos, escuchando palabras ajenas, replicando historias de otros. En este caso la foto, robada a sus visitantes, será un modo de compensación y las narraciones subidas al sitio, una forma de recuperar la palabra.
